@@ -7,13 +7,16 @@ render = web.template.render('templates/')
 # URL handling:
 urls = (
 '/', 'index',
-'/add', 'add'
+'/add', 'add',
+'/map', 'map'
 )
 
 # DB Connection:
 db = web.database(dbn='postgres', user='postgres', pw='Velavsid', host='localhost', db='test_webapp')
 
-
+class map:
+    def GET(self):
+        return render.map()
 
 class index:
     def GET(self):
