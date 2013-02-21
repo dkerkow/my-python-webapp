@@ -1,2 +1,12 @@
 my-python-webapp
 ================
+
+Just for learning purposes...
+
+Dependencies:
+-------------
+
+web.py:
+sudo easy_install web.py
+
+
