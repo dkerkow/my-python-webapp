@@ -45,5 +45,7 @@ simply run:
 python app.py
 ```
 
-
-
+Printing the help page:
+```bash
+python app.py -h
+```
