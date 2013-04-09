@@ -17,15 +17,15 @@ ap.add_argument('-H', dest='db_host', default='localhost',
                 help='PostgreSQL host.')
 ap.add_argument('-p', dest='db_port', default='5432',
                 help='PostgreSQL port.')
+ap.add_argument('-w', dest='pw', default='',
+                help='PostgreSQL password.')
 args = ap.parse_args()
 
  ## Set up the DB connection with the given parameters
 
-con = psycopg2.connect("dbname={0} user={1} host={2} port={3}".format(
-    args.db_name, args.db_user, args.db_host, args.db_port))
+con = psycopg2.connect("dbname={0} user={1} host={2} port={3} password={4}".format(
+    args.db_name, args.db_user, args.db_host, args.db_port, args.pw))
 cur = con.cursor()
-
-
 
  ## App
 
