@@ -20,6 +20,10 @@ sudo apt-get install python-psycopg2
 ```
 
 Install PostgreSQL and PostGIS
+------------------------------
+(only if you want to run a local database, instead of using an existing DB server)
+(commandline options for providing custom connection settings will be implemented soon...)
+
 
 ```bash
 sudo apt-get install postgresql postgresql-9.1-postgis
@@ -32,6 +36,14 @@ psql -U postgres -d osm -f /usr/share/postgresql/9.1/contrib/postgis-1.5/postgis
 psql -U postgres -d osm -f /usr/share/postgresql/9.1/contrib/postgis-1.5/spatial_ref_sys.sql
 ```
 
-Create Table:
 
-TODO !
+Testing / Running the App
+-------------------------
+simply run:
+
+```bash
+python app.py
+```
+
+
+
